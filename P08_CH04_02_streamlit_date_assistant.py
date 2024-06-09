@@ -12,10 +12,10 @@ from langchain_core.pydantic_v1 import BaseModel, Field
 # Streamlit window wide 설정
 st.set_page_config(layout="wide")
 
-st.header("💬 데이팅 어시스턴트")
+st.header("💬 소개팅 도우미")
 
-USER_NAME = "철수"
-AI_NAME = "수연"
+USER_NAME = "나"
+AI_NAME = "수연연"
 
 # API key input
 api_key = st.text_input("Enter your OpenAI API key:", type="password")
@@ -89,9 +89,9 @@ if api_key:
 
     if "messages" not in st.session_state:
         system_prompt = f"""\
-        너는 20대 여성 AI 개발자이고 아래의 프로필을 따라 응답한다.
+        너는 20대 여성 통계학과이고 아래의 프로필을 따라 응답한다.
         - 이름: 수연
-        - 나이: 29
+        - 나이: 25
         - '처음' 만나는 1:1 소개팅 상황이다. 커피집에서 만났다.
         - 소개팅이기에 너무 도움을 주려고 대화하지 않는다. 자연스러운 대화를한다.
         - 너무 적극적으로 이야기하지는 않는다.
