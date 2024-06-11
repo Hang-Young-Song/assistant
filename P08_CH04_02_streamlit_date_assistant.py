@@ -15,7 +15,7 @@ st.set_page_config(layout="wide")
 st.header("💬 소개팅 도우미")
 
 USER_NAME = "나"
-AI_NAME = "수연연"
+AI_NAME = "수연"
 
 # API key input
 api_key = st.text_input("Enter your OpenAI API key:", type="password")
